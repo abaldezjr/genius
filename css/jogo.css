@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	background-color: #372366;
+	background: url('../img/espaco.png');
+	font-family: 'Orbitron', sans-serif;
+}
+
+#container {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#simon-board {
+	margin: 0 auto;
+	margin-top: 5px;
+	width: 600px;
+	height: 600px;
+	border: 15px solid black;
+	border-radius: 600px;
+	box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.50);
+	background-color: black;
+}
+
+#controle {
+	width: 240px;
+	height: 240px;
+	margin: 168px;
+	background: radial-gradient(circle, white, #f3efef, #ece2e2);
+	border: 10px solid black;
+	border-radius: 150px;
+	position: absolute;
+	z-index: 10;
+	box-shadow: 5px 5px 7px 0px rgba(50, 50, 50, 0.50);
+}
+
+#titulo {
+	margin-top: 30px;
+	color: black;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#display {
+	border: 3px solid black;
+	border-radius: 10px;
+	margin: 0 auto;
+	color: red;
+	width: 60px;
+	height: 45px;
+	font-size: 30px;
+	background-color: black;
+	vertical-align: middle;
+	line-height: 1.5;
+	transition: all 0.5s;
+}
+
+#start, #strict {
+	margin: 0 auto;
+	text-align: center;
+	width: 45px;
+	height: 45px;
+	border: 5px solid black;
+	background-color: black;
+	border-radius: 30px;
+	font-size: 10px;
+	line-height: 45px;
+	box-shadow: 2px 2px 4px 0px rgba(50, 50, 50, 0.30);
+}
+
+#start {
+	background-color: red;
+}
+
+#strict {
+	background-color: yellow;
+}
+
+#start:hover {
+	background-color: green;
+	cursor: pointer;
+}
+
+#strict:hover {
+	background-color: green;
+	cursor: pointer;
+}
+
+#switch-container {
+	color: black;
+	font-weight: bold;
+	margin: 10px 40px;
+	width: 150px;
+}
+
+.outer-switch {
+	width: 60px;
+	height: 30px;
+	border: 4px solid black;
+	border-radius: 10px;
+	background-color: black;
+}
+
+.outter-active {
+	background-color: gray !important;
+}
+
+.inner-switch {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px 0 0 5px;
+	background-color: gray;
+	transition: background-color 0.125s;
+}
+
+.inner-inactive {
+	background-color: black !important;
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tile {
+	margin: 0;
+	float: left;
+	position: relative;
+	width: 294px;
+	height: 294px;
+	z-index: 8;
+	border: 3px outset black;
+}
+
+.tile:hover {
+	cursor: pointer;
+}
+
+#n1 {
+	background-color: #0a0;
+	border-radius: 300px 15px 0 15px;
+}
+
+#n1:active, .n1-active {
+	background: radial-gradient(#0a0 5%, darkgreen 95%);
+	box-shadow: -5px -15px 50px #0a0;
+}
+
+#n2 {
+	background-color: red;
+	border-radius: 15px 300px 15px 0;
+}
+
+#n2:active, .n2-active {
+	background: radial-gradient(red 5%, darkred 95%);
+	box-shadow: 5px -15px 50px red;
+}
+
+#n3 {
+	background-color: yellow;
+	border-radius: 15px 0 15px 300px;
+}
+
+#n3:active, .n3-active {
+	background: radial-gradient(yellow 5%, #CDCD00 95%);
+	box-shadow: -5px 10px 50px yellow;
+}
+
+#n4 {
+	background-color: blue;
+	border-radius: 0 15px 300px 15px;
+}
+
+#n4:active, .n4-active {
+	background: radial-gradient(blue 5%, darkblue 95%);
+	box-shadow: 5px 10px 50px blue;
+}
