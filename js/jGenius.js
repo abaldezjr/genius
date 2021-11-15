@@ -31,7 +31,7 @@ $(document).ready(function () {
 		nivel = 0;
 		nivel++;
 		geniusSeq = []
-		usuairoSeq = [];
+		usuarioSeq = [];
 		strict = true;
 		jogadaGenius();
 	});
